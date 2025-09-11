@@ -20,18 +20,18 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "leven": "^4.0.0",
+    "leven": "^4.1.0",
     "picocolors": "^1.1.1"
   },
   "devDependencies": {
-    "@types/node": "22.13.10",
-    "@vitest/coverage-v8": "3.0.8",
+    "@types/node": "24.3.1",
+    "@vitest/coverage-v8": "3.2.4",
     "jest-snapshot-serializer-ansi": "2.2.1",
-    "prettier": "3.5.3",
+    "prettier": "3.6.2",
     "standard-version": "9.5.0",
-    "typescript": "5.8.2",
-    "vite": "6.2.4",
-    "vitest": "3.0.8"
+    "typescript": "5.9.2",
+    "vite": "7.1.5",
+    "vitest": "3.2.4"
   },
   "engines": {
     "node": ">=16"
