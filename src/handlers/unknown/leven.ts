@@ -1,5 +1,5 @@
 import picocolors from 'picocolors'
-import leven from 'leven'
+import { closestMatch } from 'leven'
 import { UnknownHandler } from '../../types.js'
 
 export const levenUnknownHandler: UnknownHandler = (
@@ -11,9 +11,7 @@ export const levenUnknownHandler: UnknownHandler = (
     `Ignored unknown option ${picocolors.yellow(descriptor.pair({ key, value }))}.`,
   ]
 
-  const suggestion = Object.keys(schemas)
-    .sort()
-    .find(knownKey => leven(key, knownKey) < 3)
+  const suggestion = closestMatch(key, Object.keys(schemas), { maxDistance: 3 })
 
   if (suggestion) {
     messages.push(
