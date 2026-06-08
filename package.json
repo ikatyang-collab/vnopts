@@ -41,5 +41,10 @@
     "/lib/**/*",
     "/CHANGELOG.md"
   ],
-  "packageManager": "pnpm@11.5.2"
+  "packageManager": "pnpm@11.5.2",
+  "sideEffects": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
 }
