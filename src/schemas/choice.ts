@@ -22,8 +22,7 @@ interface ChoiceInfo {
 type ChoiceValue = undefined | null | boolean | number | string
 
 interface ChoiceSchemaParameters
-  extends SchemaParameters<ChoiceValue>,
-    SchemaHandlers<ChoiceValue> {
+  extends SchemaParameters<ChoiceValue>, SchemaHandlers<ChoiceValue> {
   choices: Array<ChoiceValue | ChoiceInfo>
 }
 

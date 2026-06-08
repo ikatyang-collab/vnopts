@@ -9,8 +9,9 @@ import {
   ValidateResult,
 } from '../types.js'
 
-interface ArraySchemaParameters<$ValueSchema extends Schema<any>>
-  extends SchemaHandlers<Array<$ValueSchema['_valueType']>> {
+interface ArraySchemaParameters<
+  $ValueSchema extends Schema<any>,
+> extends SchemaHandlers<Array<$ValueSchema['_valueType']>> {
   name?: string
   valueSchema: $ValueSchema
 }
